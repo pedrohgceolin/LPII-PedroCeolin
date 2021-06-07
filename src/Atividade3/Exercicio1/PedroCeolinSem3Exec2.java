@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PedroCeolinSem3Exec2 {
     public static void main(String[] args) {
 
-        int num , cont = 0, resto ;
+        int num =0, cont = 0, resto = 0;
         String[] vetNum = new String[20];
         Scanner leitor = new Scanner(System.in);
 
