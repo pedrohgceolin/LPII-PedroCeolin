@@ -1,53 +1,25 @@
 package Atividade2;
 
+import java.util.Scanner;
+
 public class Exercicio1 {
-
     public static void main(String[] args) {
-        String frase = new String();
+       int[] valor = new int[20];
         Scanner leitor = new Scanner(System.in);
-        int vogais = 0, digitos = 0, palin = 0;
-
-        System.out.print("Digite a string:");
-        frase = leitor.next();
-
-        System.out.println("Numero de caracteres:" + frase.length());
-        System.out.println("String em maiusculo:" + frase.toUpperCase());
-
-        for (int i=0; i<frase.length(); i++){
-            char c = frase.charAt(i);
-            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
-            {
-                vogais++;
+        System.out.print("Digite os valores:");
+        for (int i=0; i<20; i++){
+            valor[i]=leitor.nextInt();
+        }
+        for (int i=0; i<20; i++){
+            System.out.println("Valor " + (i+1) +" : "  + valor[i]);
+        }
+        int cont=0;
+        for (int i=0; i<20; i++){
+            if(valor[i]%2==0) {
+            cont++;
             }
         }
-
-        System.out.println("Numero de vogais da string:" + vogais);
-        System.out.println("String  comeca com UNI:" + frase.toUpperCase().startsWith("UNI"));
-        System.out.println("String  termina com RIO:"+ frase.toUpperCase().endsWith("RIO"));
-
-        for (int i=0; i<frase.length(); i++){
-            char c = frase.charAt(i);
-            if ( Character.isDigit(c))
-            {
-                digitos++;
-            }
-        }
-
-        System.out.println("Numero de digitos da string:" + digitos);
-
-        for (int i=0; i<frase.length(); i++){
-            Character c = frase.charAt(i);
-            Character d = frase.charAt(frase.length()-(i+1));
-            if ( c.equals(d) == false)
-            {
-                palin++;
-            }
-        }
-        if (palin>0)
-            System.out.println("String  eh palindromo: false");
-        else
-            System.out.println("String  eh palindromo: true");
-
+        System.out.print("Valores pares: " + cont);
 
     }
 }
