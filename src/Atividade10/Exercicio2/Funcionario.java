@@ -1,5 +1,7 @@
 package Atividade10.Exercicio2;
 
+import java.util.ArrayList;
+
 public class Funcionario {
     private String nome;
     private double salario;
@@ -23,5 +25,15 @@ public class Funcionario {
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    public double calculaBonificacao(){
+        return this.salario*0.1;
+    }
+
+    public void mostrarDados(){
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Salario: " + this.getSalario());
+        System.out.println("Bonificacao: " + this.calculaBonificacao());
     }
 }
