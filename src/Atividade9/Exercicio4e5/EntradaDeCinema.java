@@ -1,25 +1,23 @@
 package Atividade9.Exercicio4e5;
 
-import Atividade9.Data;
-
 public class EntradaDeCinema {
-    Atividade9.Data dataDoFilme;
+    Data dataDoFilme;
     float horario;
     int sala;
     float valor;
 
-    public EntradaDeCinema(Atividade9.Data data, float horario, int sala, float valor) {
+    public EntradaDeCinema(Data data, float horario, int sala, float valor) {
         this.dataDoFilme = data;
         this.horario = horario;
         this.sala = sala;
         this.valor = valor;
     }
 
-    public Atividade9.Data getDataDoFilme() {
+    public Data getDataDoFilme() {
         return dataDoFilme;
     }
 
-    public void setDataDoFilme(Atividade9.Data dataDoFilme) {
+    public void setDataDoFilme(Data dataDoFilme) {
         this.dataDoFilme = dataDoFilme;
     }
 
@@ -47,7 +45,7 @@ public class EntradaDeCinema {
         this.valor = valor;
     }
 
-    public void desconto(Atividade9.Data nascimento) {
+    public void desconto(Data nascimento) {
         int idade = this.dataDoFilme.ano - nascimento.ano;
         if (idade < 12) {
             this.valor = (float) (this.valor * 0.5);
@@ -55,7 +53,7 @@ public class EntradaDeCinema {
         }
     }
 
-    public void desconto(Atividade9.Data nascimento, int carteirinha) {
+    public void desconto(Data nascimento, int carteirinha) {
         int idade = this.dataDoFilme.ano - nascimento.ano;
         if (idade >= 12 && idade < 15) {
             this.valor = (float) (this.valor * 0.6);
