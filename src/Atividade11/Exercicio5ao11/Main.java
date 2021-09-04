@@ -4,7 +4,6 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("ok");
         Funcionario f1 = new Funcionario("Pedro", "001", "Tia Teteia", "Gerente");
         Funcionario f2 = new Funcionario("Joao", "002", "Tia Teteia", "Vendedor");
         Funcionario f3 = new Funcionario("Carol", "003", "Tia Teteia","Supervisor");
