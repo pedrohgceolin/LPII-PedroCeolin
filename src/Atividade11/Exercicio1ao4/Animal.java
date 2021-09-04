@@ -34,4 +34,10 @@ public class Animal {
     public void setEmiteSom(boolean emiteSom) {
         this.emiteSom = emiteSom;
     }
+
+    public void emitirSom() {
+    }
+
+    public void correr(){
+    }
 }

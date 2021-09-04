@@ -15,4 +15,14 @@ public class Cachorro extends Animal{
     public void setCorre(boolean corre) {
         this.corre = corre;
     }
+
+    public void correr(){
+        if(this.corre = true){
+            System.out.println("o animal " + this.nome + " esta correndo!!!");
+        }
+    }
+
+    public void emitirSom(){
+        System.out.println("Auuuu");
+    }
 }
