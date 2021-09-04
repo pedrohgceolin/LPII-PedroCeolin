@@ -11,8 +11,8 @@ public class Preguica {
 
     boolean sobeArvore;
 
-    public Preguica(String nome,int idade,boolean emiteSom, boolean sobeArvore){
-        super(nome, idade, emiteSom);
+    public Preguica(String nome,int idade, boolean emiteSom, boolean sobeArvore){
+
         this.sobeArvore = sobeArvore;
     }
 }

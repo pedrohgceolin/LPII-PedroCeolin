@@ -1,26 +1,21 @@
 package Atividade10.Exercicio3;
 
 import java.util.ArrayList;
-<<<<<<< HEAD
-import java.util.spi.TimeZoneNameProvider;
-=======
->>>>>>> origin/master
 
 public class ColecoesFormas {
     ArrayList<Forma> f = new ArrayList<>();
-    Forma c1 = new Circulo(10);
-    ColecoesFormas(){
+    public ColecoesFormas(){
         this.f = new ArrayList<Forma>();
     }
 
     public void adicionarItem(Forma f){
-        this.f.add(c1);
+        this.f.add(f);
     }
-<<<<<<< HEAD
 
     public void Imprimir(){
-
+        for(Forma f : this.f){
+            System.out.println(f);
+        }
     }
-=======
->>>>>>> origin/master
+
 }
